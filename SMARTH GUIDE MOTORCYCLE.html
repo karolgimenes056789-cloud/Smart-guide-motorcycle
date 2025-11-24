@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTH GUIDE MOTORCYCLE</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #a5c8ff; /* azul pastel */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        img {
+            display: block;
+            margin: 15px auto;
+            max-width: 90%;
+            border-radius: 10px;
+        }
+
+        h2, h3 {
+            color: #0c0c0c;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SMARTH GUIDE MOTORCYCLE</h1>
+    <h2>Autores: Maria Fernanda Sarmiento – Pathy Alexandra Rache Guaman</h2>
+    <h2>MOVILIDAD AUTÓNOMA PARA INVIDENTES</h2>
+</header>
+
+<section>
+    <h2>1. Fundamentos y trabajos previos</h2>
+
+    <h3>1.1 Relevancia del problema</h3>
+    <p>La discapacidad visual afecta a una proporción significativa de la población mundial y restringe la autonomía y participación social de las personas que la padecen.
+    La literatura reciente muestra que la falta de soluciones de transporte inclusivas genera barreras de movilidad que afectan la empleabilidad, acceso a servicios y calidad de vida.
+    La combinación de percepción multisensorial, planificación de trayectoria y control inteligente constituyen los pilares técnicos sobre los cuales se construyen las soluciones de movilidad autónoma.
+    Además, las técnicas de aprendizaje profundo han transformado la capacidad de percepción automática (detección y clasificación de objetos) y son fundamentales para diseñar sistemas de asistencia fiables.
+    Finalmente, por razones de privacidad y despliegue en múltiples usuarios, el aprendizaje federado se postula como un paradigma apropiado para entrenar modelos distribuidos en dispositivos de movilidad sin centralizar datos sensibles.</p>
+
+    <h3>1.2 Trabajos actuales con IA</h3>
+    <p>En los últimos años se han propuesto múltiples soluciones basadas en IA para la asistencia en movilidad:</p>
+
+    <ul>
+        <li><b>Sistemas integrados de percepción y asistencia:</b> Fink et al. presentan The Autonomous Vehicle Assistant (AVA), un estudio de diseño y pruebas con usuarios ciegos y con baja visión que explora asistencia multimodal dentro de vehículos autónomos.</li>
+
+        <li><b>Soluciones de detección y navegación:</b> Trabajos en visión por computador y detección en tiempo real demuestran que es posible identificar cruces, vehículos, peatones y obstáculos dinámicos con arquitecturas CNN/transformers adaptadas a entornos urbanos complejos.</li>
+
+        <li><b>Aprendizaje federado en movilidad:</b> Propuestas que aplican federated learning a escenarios vehiculares, mejorando privacidad y robustez en diferentes nodos.</li>
+
+        <li><b>Interfaces accesibles y retroalimentación háptica / auditiva:</b> Estudios muestran que las salidas hápticas y auditivas son esenciales para la aceptación de vehículos autónomos accesibles.</li>
+    </ul>
+
+    <h3>1.3 Trabajos similares y limitaciones identificadas</h3>
+    <p>A continuación se resumen trabajos cercanos y sus limitaciones más relevantes para nuestro problema:</p>
+
+    <ul>
+        <li><b>Bastones inteligentes:</b> Zhang & Liu proponen un bastón con cámara y ultrasonido, pero sin identificación semántica.</li>
+        <li><b>Navegación conectada:</b> Dependencia de conexión constante (Wang & Li).</li>
+        <li><b>Visión por computador:</b> Detección sin personalización ni aprendizaje colaborativo (Liu & Zhao).</li>
+        <li><b>Asistencia en AVs:</b> Estudios prometedores pero aún en escenarios controlados (Fink et al.).</li>
+    </ul>
+
+    <p>Limitaciones principales:</p>
+    <ul>
+        <li>1) Falta de integración multisensorial robusta</li>
+        <li>2) Dependencia de internet</li>
+        <li>3) Poco uso de aprendizaje federado</li>
+        <li>4) Poca evaluación real</li>
+    </ul>
+
+    <h3>1.4 Planteamiento del Problema</h3>
+    <p>A pesar del auge de los vehículos autónomos, no existen suficientes soluciones inclusivas para personas con discapacidad visual.  
+    Se requiere un sistema que integre accesibilidad, seguridad y privacidad de datos.</p>
+
+    <h3 id="objetivos">1.5 Objetivos</h3>
+
+    <!-- IMAGEN ARBOL DE PROBLEMAS -->
+    <img src="ARBOL DE PROBLEMAS.png" alt="Árbol de Problemas">
+    <p><em>Figure 1.1: Árbol de Problemas</em></p>
+
+    <h3>1.5.1 Objetivo General</h3>
+    <p>Diseñar e implementar soluciones de movilidad autónoma accesibles para personas con discapacidad visual, integrando tecnologías inclusivas y adaptadas.</p>
+
+    <h3>1.5.2 Objetivos Específicos</h3>
+    <ul>
+        <li>Desarrollar vehículos adaptados para movilidad segura.</li>
+        <li>Integrar tecnologías de asistencia que reduzcan dependencia.</li>
+        <li>Impulsar innovación en movilidad inclusiva.</li>
+    </ul>
+
+    <h3>1.6 Metodología</h3>
+    <p>La metodología se basa en cuatro fases:</p>
+
+    <ul>
+        <li>1. Revisión bibliográfica sobre accesibilidad y aprendizaje federado.</li>
+        <li>2. Diseño del sistema y arquitectura del vehículo autónomo.</li>
+        <li>3. Integración de sensores, interfaces accesibles y federated learning.</li>
+        <li>4. Evaluación conceptual mediante simulaciones y usuarios.</li>
+    </ul>
+
+    <h3>1.7 Resultados Esperados</h3>
+    <p>Se espera un modelo conceptual que demuestre la factibilidad de un vehículo autónomo inclusivo.</p>
+
+    <hr>
+
+    <!-- IMAGEN PIPELINE IA -->
+    <img src="pipeline ia.png" alt="Pipeline IA">
+    <p><em>Figure 2: Pipeline IA</em></p>
+
+    <!-- IMAGEN PAPPER -->
+    <img src="papper.jpeg" alt="Paper">
+    <p><em>Figure 3: Paper</em></p>
+
+    <hr>
+
+    <h2>Referencias</h2>
+    <p>[1] World Health Organization...</p>
+    <p>[2] Goodfellow, Bengio y Courville...</p>
+    <p>[3] LeCun, Bengio, Hinton...</p>
+    <p>[4] Yang et al...</p>
+    <p>[5] Fink et al...</p>
+    <p>[6] Ren et al...</p>
+    <p>[7] Redmon et al...</p>
+    <p>[8] Eriksson et al...</p>
+    <p>[9] Zhang y Liu...</p>
+    <p>[10] Wang y Li...</p>
+    <p>[11] Liu y Zhao...</p>
+    <p>[12] Dicianno et al...</p>
+    <p>[13] Golbabaei et al...</p>
+
+</section>
+
+</body>
+</html>
